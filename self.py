@@ -108,20 +108,6 @@ for i in range(0,len(distances.flatten())):
 
 
 
-"""def get_movies(movie_name , n):
-    n_movies = n
-    movie_list = movies[movies['title'].str.contains(movie_name)]
-    if(len(movie_list)):
-        movie_idx= movie_list.iloc[0]['movieId']
-        movie_idx = dataset_pivoted[dataset_pivoted['movieId'] == movie_idx].index[0]
-        distance, indices = knn.kneighbors(dataset_pivoted.iloc[movie_idx, :].values.reshape(1,-1) , n_neighbors = n_movies+1)
-        for i in range(0,len(distances.flatten())):
-            if i == 0 :
-                print('Recommendations for ' + movie_name + '\n')
-                else:
-                print(dataset_pivoted.index[indices.flatten()[i]])
-    else:
-        print('No film found')"""
-  
+
 
 
